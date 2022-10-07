@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(walk(1000, 10000));// вот почему у меня выходило только метод main, теперь понял :)
+        System.out.println(walk(1000, 10000));// РІРѕС‚ РїРѕС‡РµРјСѓ Сѓ РјРµРЅСЏ РІС‹С…РѕРґРёР»Рѕ С‚РѕР»СЊРєРѕ РјРµС‚РѕРґ main, С‚РµРїРµСЂСЊ РїРѕРЅСЏР» :)
         System.out.println(walk(25, 29));
         System.out.println(walk(19, -1));
         System.out.println(walk(45, 25));
@@ -13,13 +13,13 @@ public class Main {
 
     public static String walk(int age, int temperature) {
         if (age >= 20 && age <= 45 && temperature >= -20 && temperature <= 30) {
-            return ("можно идти гулять");
+            return ("РјРѕР¶РЅРѕ РёРґС‚Рё РіСѓР»СЏС‚СЊ");
         } else if (age <= 20 && temperature >= 0 && temperature <= 28) {
-            return ("можно идти гулять");
+            return ("РјРѕР¶РЅРѕ РёРґС‚Рё РіСѓР»СЏС‚СЊ");
         } else if (age >= 45 && temperature >= -10 && temperature <= 25) {
-            return ("можно идти гулять");
+            return ("РјРѕР¶РЅРѕ РёРґС‚Рё РіСѓР»СЏС‚СЊ");
         } else
-            return ("Оставайтесь дома");
+            return ("РћСЃС‚Р°РІР°Р№С‚РµСЃСЊ РґРѕРјР°");
     }
 
     public static String generateRandomAge() {
@@ -30,13 +30,13 @@ public class Main {
         int randomAge = random.nextInt(diff + 1) + min;
 
         if (randomAge >= 20 ) {
-            return ("можно ездить гулять");
+            return ("РјРѕР¶РЅРѕ РµР·РґРёС‚СЊ РіСѓР»СЏС‚СЊ");
         } else if ( randomAge > 5 ) {
-            return ("можно ездить гулять");
+            return ("РјРѕР¶РЅРѕ РµР·РґРёС‚СЊ РіСѓР»СЏС‚СЊ");
         } else if (randomAge < 80 ) {
-            return ("можно ездить гулять");
+            return ("РјРѕР¶РЅРѕ РµР·РґРёС‚СЊ РіСѓР»СЏС‚СЊ");
         } else
-            return ("Оставайтесь дома");
+            return ("РћСЃС‚Р°РІР°Р№С‚РµСЃСЊ РґРѕРјР°");
 
 
     }
